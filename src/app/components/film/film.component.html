@@ -1,0 +1,16 @@
+<div class="card" style="cursor: pointer">
+  <img
+    [lazyLoad]="film.Poster"
+    [alt]="film.Title"
+    class="card-img-top"
+    style="height: 250px"
+  />
+  <div class="card-body">
+    <h6 class="film-title"
+        data-mdb-toggle="tooltip"
+        data-mdb-placement="top"
+        [title]="film.Title">{{film.Title}}
+    </h6>
+    <span class="card-text">{{film.Year}}</span>
+  </div>
+</div>
